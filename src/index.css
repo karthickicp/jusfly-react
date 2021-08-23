@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&amp;display=swap');
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body{width: 100%; float: left; font-family: 'Rubik', sans-serif !important;}
+.wrapper{width: 100%; float: left;}
+.wrapper-container{max-width: 1600px; margin: auto; width: 100%; padding: 50px 40px 50px 40px;}
+ img{width: 100%;}
+ a:hover{color: #DF661C !important;}
+ .bg-sandal{background: #FFF2EA !important;}
+ h1{font-size: 40px !important; line-height: 50px !important; font-weight: 400 !important;}
+/* nav menu */
+.sidenav {height: 100%;width: 0;position: fixed;z-index: 1;top: 0;right: 0;background-color: #111;overflow-x: hidden;transition: 0.5s;padding-top: 60px;}
+.sidenav a {padding: 8px 8px 8px 32px;text-decoration: none;font-size: 25px;color: #818181;display: block;transition: 0.3s;}
+.sidenav a:hover {color: #000;}
+.sidenav .closebtn {position: absolute;top: 0;left: 25px;font-size: 36px;padding: 0;}
+.hamburger{font-size: 30px; float: right;}
+/* header */
+header{padding: 20px 40px;}
+nav{display: flex; justify-content: space-between; align-items: center; width: 100%;}
+nav img{max-width: 90px; float: left;}
+.nav-menu{width: calc(100% - 330px);}
+nav ul{padding: 0; text-align: center; margin: 0;}
+nav ul li{padding-right: 28px; display: inline;}
+nav ul li:nth-last-child(1){padding: 0;}
+nav ul li a{text-decoration: none; color: #2A2A2A; text-transform: uppercase;font-weight: 400; font-size: 1rem;}
+.regsiterBtn {width: 200px; float: right;}
+.Btn{padding: 8px 20px;; border: none; text-transform: uppercase; font-size: 14px;}
+.Btn-primary{background: #DF661C; color: #fff; border: 2px solid #DF661C;}
+.Btn-transparent{background: transparent;}
+/* mobile header */
+.mob-header img{max-width: 120px}
+.mob-header .regsiterBtn{margin: 10px 15px 0 0;}
+.mob-header .hamburger{margin-top: 5px;}
+/* top wrapper */
+.top-wrapper .wrapper-container{position: relative;}
+.top-wrapper img{width: 100%;}
+/* left section */
+.leftSec span{font-size: 16px; font-weight: 600; color: #DF661C; }
+.leftSec h1{font-size: 40px; color: #000; font-weight: 400; line-height: 50px; margin-top: 5px;}
+.leftSec p{font-size: 16px; margin: 20px 0;}
+/* booking wrapper */
+.tab { overflow: hidden;}
+.tab button {background-color: #000;float: left;border: none;outline: none;cursor: pointer; padding: 10px 16px;transition: 0.3s; font-size: 17px; color: #fff; font-size: 14px;
+    font-weight: normal;}
+.tab button:hover {background-color: #af5015;}
+.tab button.active {background-color: #DF661C;}
+.tabcontent {display: none; padding: 6px 0; border-top: none;}
+.booking-wrapper{position:absolute; right: 40px; top: -250px;}
+.booking-wrapper .card{padding: 30px 40px 15px 40px; float: right; box-shadow: 0 0 30px #00000029;}
+form{margin: 15px 0 0 0;}
+form .row div{margin-bottom: 10px;}
+form label{width: 100%; margin-bottom: 5px; font-weight: 600; font-size: 16px;}
+input{width: 100%; padding: 7px 15px; border: 1px solid #000; background: transparent;}
+.tabcontent .input-spliter input{padding: 7px 10px; font-size: 14px;}
+form .Btn-secondary{border: none; padding: 8px 20px; width: 150px; background: #000; opacity: 50%; color: #fff; text-transform: uppercase;font-size: 14px;
+border: 2px solid #000;}
+.Btn-borderonly{background: #fff;border: 2px solid #DF661C;color: #000 !important;opacity: 1 !important;padding: 8px 20px !important; width: auto !important;
+    margin-right: 10px; font-size: 14px;}
+/* custom select box */
+.custom-select {
+    position: relative;
+  } 
+  .custom-select select {
+    display: none;
+  }
+  
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 18px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid #000;
+    border-color: #000 transparent transparent transparent;
+  }
+  
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #000 transparent;
+    top: 11px;
+  }
+  
+  .select-items div,.select-selected {
+    color: #000;
+    padding: 8px 16px;
+    border: 1px solid #000;
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: 0 !important;
+  }
+  
+  .select-items {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background: #fff;
+  }
+  .select-items div{border: none; border-bottom:  1px solid #e1e1e1;}
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  /* title card */
+  .title-card{text-align: center;}
+  .title-card span{font-size: 16px; font-weight: 600; color: #DF661C;}
+  .title-card h1{font-size: 40px; color: #000; font-weight: 400; line-height: 50px; margin: 5px auto; width: 100%; max-width: 1000px;}
+
+  /* city-wrapper */
+  .city-wrapper{ width: 100%; float: left;}
+  /* .city-wrapper .city-sec{width: 100%;float: left; display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr;grid-gap: 10px; margin: 30px 0 40px 0;} */
+  .city-wrapper .cities{width: 20%; float: left; padding: 10px; margin: 20px 0 30px 0;}
+  .city-wrapper .cities .card{box-shadow: 0 0 30px #00000029;}
+  .city-wrapper div img{width: 100%;}
+  .city-wrapper div h5{margin: 20px auto; font-size: 20px; line-height: 24px; font-weight: 400;}
+  .Btn-dark{padding: 8px 20px; margin: auto; display: block; background-color: #000; color: #fff; border: 2px solid #000; font-size: 14px;}
+
+  /* key-wrapper */
+  .key-wrapper{background: #FFF2EA;}
+  .key-wrapper .row{margin: 40px 0 30px 0;}
+  .key-wrapper img{width: 100%; height: 320px; object-fit: cover;}
+  .key-wrapper .title-card{margin: 10px 0 0px 0;}
+  /* .key-wrapper .key-notes{display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 20px; grid-auto-rows: 180px;} */
+  .key-notes img{max-height: 60px; float: left; width: auto;}
+  /* .key-notes div{padding: 40px 30px; background: #fff; box-shadow: 0 0 30px #00000029; display: flex; justify-content: center; align-items: center;} */
+  .key-notes div:nth-child(even){margin-right: 0 !important;}
+  .key-notes div{width: 47%;float: left;background: #fff; padding: 30px 30px;  min-height: 150px; margin: 0 20px 20px 0;  display: flex;  align-items: center;}
+  .key-notes div h5{width: 100%; float: left; margin: 10px 0 0 30px; max-width: 200px; font-weight: 400; font-size: 20px; line-height: 24px}
+
+  /* benefit wrapper */
+  .benefit-wrapper img{width: 100%; max-height: 335px; object-fit: cover;}
+  .leftSec h3{color: #DF661C; font-size: 30px; line-height: 40px; font-weight: 400;}
+  .leftSec button{margin: 14px 0;}
+
+  /* charter wrapper */
+  .private-charter{width: 100%; float: left; margin: 50px 0; position: relative;}
+  .charter-wrapper .charter-bg{min-height: 500px;background-color: #DF661C; width: 100%; max-width: 1400px; position: absolute; z-index: -1;}
+  .charter-wrapper h1{font-size: 40px; line-height: 50px; color: #fff; margin-bottom: 20px; font-weight: 400;}
+  .charter-wrapper p{font-size: 20px; line-height: 30px; color: #fff; margin-bottom: 30px; max-width: 650px;}
+  .charter-bg-secondary{min-height: 500px;background-color: #191842; width: 100%; max-width: 1400px; position: absolute; z-index: -1; right: 0;}
+  .charter-wrapper-new{width: 100%; float: right; color: #fff; margin: 25px 0;}
+  .charter-wrapper-new .wrapper-container {padding: 0; width: 100%; max-width: 1400px;float: right; background-color: #191842;}
+  .charter-img-sec{width: 300px; min-height: 300px; float: left; position: relative;}
+  .charter-img-sec img{width: 100%}
+  .charter-img-sec div{background-image: linear-gradient(to bottom, #19184200, #191842 100%); position: absolute; bottom: 0; width: 100%; min-height: 80px;}
+  .charter-img-sec h4 {color: #fff; font-size: 20px; line-height: 24px; width: 100%; text-align: center; margin: 25px 0 0 0 ; font-weight: 400;} 
+  .seeMore{display: flex;justify-content: center;align-items: center;flex-direction: column;}
+  .seeMore img{max-width: 30px; margin-top: 15px}
+
+  /* quote wrapper */
+  .quote-wrapper {background: #DF661C;}
+  .quote-wrapper .wrapper-container{max-width: 1520px;}
+  .quote-wrapper .title-card span, .quote-wrapper .title-card h1,.quote-wrapper p{color: #fff;}
+  .quote-wrapper .title-card, .quote-wrapper p{max-width: 600px; margin: auto; text-align: center;}
+  .quote-wrapper h1{line-height: 50px; margin: 20px 0;}
+  .quote-wrapper p{margin-bottom: 20px; line-height: 24px;}
+  .quote-wrapper button{opacity: 1;}
+
+  /* carousel */
+  .carousel-caption{top: 0;height: 100%;display: flex !important;justify-content: center;align-items: center;flex-direction: column}
+  .carousel-item{background: #FFF2EA !important; height: 100% !important;}
+  .carousel-caption h5{font-size: 16px; line-height: 18px;font-weight: 700; color: #000;}
+  .carousel-caption p{font-size: 20px; line-height: 30px; color: #000; font-style: italic; font-weight: 400; margin: 10px 0 ;}
+  .testimonial-wrapper img{max-height: 400px; object-fit: cover; padding-left: 15px;}
+  .testimonial-wrapper .title-card {margin-bottom: 40px;}
+
+  /* subscribe wrapper */
+  .subscribe-wrapper{background: #FFF2EA;}
+  .subscribe-wrapper .Btn {margin: inherit;}
+  .subscribe-wrapper img{max-height: 440px;object-fit: cover; padding-right: 35px;}
+
+  /* insight wrapper */
+  .insight-wrapper .wrapper-container{max-width: 1200px;}
+  .insight-wrapper .title-card{margin: 10px 0 30px 0;}
+  .insight-section .card{background: #FFF2EA; min-height: 420px; box-shadow: none !important; margin-bottom: 25px;}
+  .insight-section .date{position: absolute; top: 25px; left: 20px; color: #fff; font-size: 14px; font-weight: 500;}
+  .insight-section h3{font-size: 20px; line-height: 30px; padding: 30px; color: #000; font-weight: 600;}
+  .blog-xl img{max-height: 420px; background-size: cover;}
+  .blog-xl h3{padding-bottom: 0;}
+  .blog-xl span{font-size: 14px; color: #000; font-weight: 500; margin: 25px 0 0 20px; display: block;}
+  .blog-xl p{padding: 10px 35px;}
+  .insight-wrapper button{margin: 20px auto 0 auto; display: block;}
+ 
+  /* footer */
+  .footer-wrapper{background: #000;}
+  footer img{max-width: 150px; float: left; margin-right: 50px;} 
+  .footer-section {float: left; margin-bottom: 20px;}
+  .footer-section h4{font-size: 14px; line-height: 11px; color: #DF661C; font-weight: 600;}
+  .footer-section ul{padding: 0; margin: 20px 0;}
+  .footer-section ul li{list-style: none; margin-bottom: 8px;}
+  .footer-section a{color: #fff; text-decoration: none; font-weight: 300;}
+  footer .contact{width: 16%;}
+  footer .service{width: 13%;}
+  footer .newsletter{width: 29%;}
+  footer .newsletter p{color: #838383; font-size: 1rem; line-height: 20px; margin: 20px 0;}
+  footer .newsletter input{width: auto; background: transparent; border: 1px solid #838383; color: #fff; font-size: 14px; margin: 0 10px 10px 0; outline: none;}
+  footer .newsletter form input::placeholder{color: #fff; opacity: 1;}
+  footer .newsletter button{background: transparent; color: #fff !important; padding: 6px 20px !important; font-size: 14px;}
+
+  /* custom checkbox */
+  .checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .checkbox-container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .checkbox-container input:checked ~ .checkmark {
+    background-color: #000;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .checkbox-container .checkmark:after {
+    left: 9px;
+    top: 4px;
+    width: 8px;
+    height: 13px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+    /* empty leg */
+    .emptyleg-wrapper {background: #DF661C;}
+    .emptyleg-wrapper h1{color: #fff;}
+    .emptyleg-wrapper p{font-size: 20px; line-height: 30px; color: #fff; margin: 20px 0; width: 100%; max-width: 650px;}
+    .emptyleg-wrapper form input{border-color:#FFFFFF80 !important ;}
+    .emptyleg-wrapper form label, .emptyleg-wrapper form input, .emptyleg-wrapper form input::placeholder{color:#fff; font-weight: 400;}
+    .emptyleg-wrapper form input::placeholder{font-weight: 300 !important;}
+    .checkbox-container span{font-size: 16px;display: block;font-weight: 300;}
+    .Btn-white{background: transparent;border: 2px solid #fff;padding: 8px 20px; margin-left: 20px;font-size: 14px; color: #fff;}
+    .emptyleg-wrapper .select-selected{border-color: #ffffff80; color: #ffffff80; font-weight: 300;}
+    .emptyleg-wrapper .select-selected::after{border-color: #ffffff80 transparent transparent transparent;}
+
+    /* available-flight-wrapper */
+    .available-flight-wrapper table td{padding: 12px 15px;}
+    .available-flight-wrapper table th{padding: 8px 15px;}
+    .available-flight-wrapper h3{font-size: 14px; line-height: 30px; max-width: 400px; float: left;font-weight: 600; margin: 10px 0;}
+    .available-flight-wrapper th{font-size: 16px; font-weight: 400;}
+    .available-flight-wrapper th img{max-width: 20px;}
+    .available-flight-wrapper p{font-size: 14px; line-height: 30px; margin-bottom: 0;}
+    .available-flight-wrapper .arrow{max-width: 25px; float: left; margin: 12px 20px 0 20px;}
+    .available-flight-wrapper p img {max-width: 20px; margin-right: 10px;}
+    .available-flight-wrapper button {margin-top: 10px;}
+    .available-flight-wrapper .title-card{margin-bottom: 50px;}
